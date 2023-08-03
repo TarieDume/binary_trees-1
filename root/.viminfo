@@ -10,13 +10,40 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/\s\+$
+
+# Last Substitute Search Pattern:
+~MSle0&\s\+$
+
+# Last Substitute String:
+$+$
+
 # Command Line History (newest to oldest):
 :wq
-|2,0,1675893771,,"wq"
+|2,0,1691087890,,"wq"
+:q!
+|2,0,1687808926,,"q!"
 :q
-|2,0,1675804905,,"q"
+|2,0,1686658964,,"q"
+:%s/\s/+$//e
+|2,0,1682516601,,"%s/\\s/+$//e"
+:s
+|2,0,1681144327,,"s"
+:%s/\s\+$//
+|2,0,1680640522,,"%s/\\s\\+$//"
+:wqq
+|2,0,1680203611,,"wqq"
+:qw
+|2,0,1676570006,,"qw"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1680640522,,"\\s\\+$"
+? \<temp\>
+|2,1,1680638062,,"\\<temp\\>"
+?/i/
+|2,1,1676319138,47,"i/"
 
 # Expression History (newest to oldest):
 
@@ -25,391 +52,977 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""0	LINE	0
+	
+|3,1,0,1,1,0,1686066534,""
 "1	LINE	0
-	echo "ALX"#!/bin/bash
-|3,0,1,1,1,0,1675794346,"echo \"ALX\"#!/bin/bash"
+	#include "list.h"
+|3,0,1,1,1,0,1680615356,"#include \"list.h\""
 "2	LINE	0
-	echo "ALX"#!/bin/bash
-|3,0,2,1,1,0,1675794338,"echo \"ALX\"#!/bin/bash"
+		while (dest[i] != '\0')
+		{
+			i++;
+		
+|3,0,2,1,4,0,1677766195,"	while (dest[i] != '\\0')","	{","		i++;","	"
 "3	LINE	0
-	echo "ALX"
-|3,0,3,1,1,0,1675794333,"echo \"ALX\""
+		
+|3,0,3,1,1,0,1677766136,"	"
 "4	LINE	0
+		j = 0;
+		while (src[j] != '\0')
+		{
+			dest[j] = src[j];
+			i++;
+			j++;
+		}
+	
+		dest[i] = '\0';
+		return (dest);
+	}
+|3,0,4,1,11,0,1677766107,"	j = 0;","	while (src[j] != '\\0')","	{","		dest[j] = src[j];","		i++;","		j++;","	}","","	dest[i] = '\\0';","	return (dest);","}"
+"5	LINE	0
+	echo "ALX"#!/bin/bash
+|3,0,5,1,1,0,1675794346,"echo \"ALX\"#!/bin/bash"
+"6	LINE	0
+	echo "ALX"#!/bin/bash
+|3,0,6,1,1,0,1675794338,"echo \"ALX\"#!/bin/bash"
+"7	LINE	0
+	echo "ALX"
+|3,0,7,1,1,0,1675794333,"echo \"ALX\""
+"8	LINE	0
 	inserting
-|3,0,4,1,1,0,1675186949,"inserting"
-""-	CHAR	0
-	n
-|3,1,36,0,1,0,1675807349,"n"
+|3,0,8,1,1,0,1675186949,"inserting"
+"v	CHAR	0
+	€ýai€ýaW
+|3,0,31,0,1,0,1680631072,"€ýai€ýaW"
+"-	CHAR	0
+	.
+|3,0,36,0,1,0,1680613701,"."
 
 # File marks:
-'0  1  7  /.git/COMMIT_EDITMSG
-|4,48,1,7,1675893771,"/.git/COMMIT_EDITMSG"
-'1  2  4  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,49,2,4,1675893529,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
-'2  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,50,3,0,1675893234,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
-'3  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,51,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
-'4  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,52,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
-'5  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,53,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
-'6  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,54,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
-'7  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/l-listit
-|4,55,2,1,1675888221,"~/alx-system_engineering-devops/0x00-shell_basics/l-listit"
-'8  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,56,1,0,1675886977,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
-'9  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,57,2,0,1675886977,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
+'0  86  26  ~/binary_trees/binary_trees.h
+|4,48,86,26,1691087890,"~/binary_trees/binary_trees.h"
+'1  20  0  ~/binary_trees/18-binary_tree_uncle.c
+|4,49,20,0,1691083505,"~/binary_trees/18-binary_tree_uncle.c"
+'2  18  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,50,18,0,1691083377,"~/binary_trees/17-binary_tree_sibling.c"
+'3  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,51,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+'4  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,52,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+'5  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,53,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+'6  20  0  ~/binary_trees/13-binary_tree_nodes.c
+|4,54,20,0,1691082803,"~/binary_trees/13-binary_tree_nodes.c"
+'7  20  0  ~/binary_trees/12-binary_tree_leaves.c
+|4,55,20,0,1691082663,"~/binary_trees/12-binary_tree_leaves.c"
+'8  20  0  ~/binary_trees/11-binary_tree_size.c
+|4,56,20,0,1691082556,"~/binary_trees/11-binary_tree_size.c"
+'9  12  0  ~/binary_trees/10-binary_tree_depth.c
+|4,57,12,0,1691082449,"~/binary_trees/10-binary_tree_depth.c"
 
 # Jumplist (newest first):
--'  1  7  /.git/COMMIT_EDITMSG
-|4,39,1,7,1675893771,"/.git/COMMIT_EDITMSG"
--'  2  4  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,2,4,1675893529,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  2  4  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,2,4,1675893529,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,3,0,1675893234,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,3,0,1675893234,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,1,0,1675893176,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,1,0,1675893176,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,1,0,1675893176,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-|4,39,1,0,1675893176,"~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  2  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,2,2,1675892308,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  2  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,2,0,1675891940,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  1  0  ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-|4,39,1,0,1675891889,"~/alx-system_engineering-devops/.git/COMMIT_EDITMSG"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  3  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,3,0,1675891324,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  1  0  ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-|4,39,1,0,1675891252,"~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
--'  2  1  ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-|4,39,2,1,1675890051,"~/alx-system_engineering-devops/0x00-shell_basics/1-listit"
+-'  86  26  ~/binary_trees/binary_trees.h
+|4,39,86,26,1691087890,"~/binary_trees/binary_trees.h"
+-'  1  0  ~/binary_trees/binary_trees.h
+|4,39,1,0,1691087863,"~/binary_trees/binary_trees.h"
+-'  20  0  ~/binary_trees/18-binary_tree_uncle.c
+|4,39,20,0,1691083505,"~/binary_trees/18-binary_tree_uncle.c"
+-'  20  0  ~/binary_trees/18-binary_tree_uncle.c
+|4,39,20,0,1691083505,"~/binary_trees/18-binary_tree_uncle.c"
+-'  1  0  ~/binary_trees/18-binary_tree_uncle.c
+|4,39,1,0,1691083439,"~/binary_trees/18-binary_tree_uncle.c"
+-'  1  0  ~/binary_trees/18-binary_tree_uncle.c
+|4,39,1,0,1691083439,"~/binary_trees/18-binary_tree_uncle.c"
+-'  18  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,18,0,1691083377,"~/binary_trees/17-binary_tree_sibling.c"
+-'  18  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,18,0,1691083377,"~/binary_trees/17-binary_tree_sibling.c"
+-'  18  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,18,0,1691083377,"~/binary_trees/17-binary_tree_sibling.c"
+-'  18  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,18,0,1691083377,"~/binary_trees/17-binary_tree_sibling.c"
+-'  1  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,1,0,1691083335,"~/binary_trees/17-binary_tree_sibling.c"
+-'  1  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,1,0,1691083335,"~/binary_trees/17-binary_tree_sibling.c"
+-'  1  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,1,0,1691083335,"~/binary_trees/17-binary_tree_sibling.c"
+-'  1  0  ~/binary_trees/17-binary_tree_sibling.c
+|4,39,1,0,1691083335,"~/binary_trees/17-binary_tree_sibling.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  77  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,77,0,1691083285,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  1  0  ~/binary_trees/16-binary_tree_is_perfect.c
+|4,39,1,0,1691083264,"~/binary_trees/16-binary_tree_is_perfect.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  35  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,35,0,1691083193,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  1  0  ~/binary_trees/15-binary_tree_is_full.c
+|4,39,1,0,1691083140,"~/binary_trees/15-binary_tree_is_full.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  34  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,34,0,1691082973,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
+-'  1  0  ~/binary_trees/14-binary_tree_balance.c
+|4,39,1,0,1691082938,"~/binary_trees/14-binary_tree_balance.c"
 
 # History of marks within files (newest to oldest):
 
-> /.git/COMMIT_EDITMSG
-	*	1675893767	0
-	"	1	7
-	^	1	8
+> ~/binary_trees/binary_trees.h
+	*	1691087886	0
+	"	86	26
+	^	86	27
+	.	86	26
+	+	86	26
+
+> ~/binary_trees/18-binary_tree_uncle.c
+	*	1691083490	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/binary_trees/17-binary_tree_sibling.c
+	*	1691083374	0
+	"	18	0
+	^	18	1
+	.	18	0
+	+	18	0
+
+> ~/binary_trees/16-binary_tree_is_perfect.c
+	*	1691083283	0
+	"	77	0
+	^	77	1
+	.	77	0
+	+	77	0
+
+> ~/binary_trees/15-binary_tree_is_full.c
+	*	1691083189	0
+	"	35	0
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/binary_trees/14-binary_tree_balance.c
+	*	1691082971	0
+	"	34	0
+	^	34	1
+	.	34	0
+	+	34	0
+
+> ~/binary_trees/13-binary_tree_nodes.c
+	*	1691082800	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/binary_trees/12-binary_tree_leaves.c
+	*	1691082659	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/binary_trees/11-binary_tree_size.c
+	*	1691082553	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/binary_trees/10-binary_tree_depth.c
+	*	1691082447	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/binary_trees/9-binary_tree_height.c
+	*	1691082067	0
+	"	20	0
+	^	20	1
+	.	20	0
+	+	20	0
+
+> ~/binary_trees/8-binary_tree_postorder.c
+	*	1691081955	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/binary_trees/7-binary_tree_inorder.c
+	*	1691081771	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/binary_trees/6-binary_tree_preorder.c
+	*	1691081363	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/binary_trees/5-binary_tree_is_root.c
+	*	1691081163	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/binary_trees/4-binary_tree_is_leaf.c
+	*	1691081012	0
+	"	16	0
+	^	16	1
+	.	16	0
+	+	16	0
+
+> ~/binary_trees/3-binary_tree_delete.c
+	*	1691080948	0
+	"	15	0
+	^	15	1
+	.	15	0
+	+	15	0
+
+> ~/binary_trees/2-binary_tree_insert_right.c
+	*	1691080843	0
+	"	35	0
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/binary_trees/1-binary_tree_insert_left.c
+	*	1691080697	0
+	"	35	0
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/binary_trees/0-binary_tree_node.c
+	*	1691080588	0
+	"	25	0
+	^	25	1
+	.	25	0
+	+	25	0
+
+> ~/alx-system_engineering-devops/0x09-web_infrastructure_design/2-secured_and_monitored_web_infrastructure
+	*	1690996146	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/alx-system_engineering-devops/0x09-web_infrastructure_design/1-distributed_web_infrastructure
+	*	1690996024	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/alx-system_engineering-devops/0x09-web_infrastructure_design/0-simple_web_stack
+	*	1690995680	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/AirBnB_clone/web_static/3-index.html
+	*	1690475659	0
+	"	19	6
+	^	19	7
+	.	19	6
+	+	19	6
+
+> ~/alx-low_level_programming/0x1C-makefiles/100-Makefile
+	*	1690377101	0
+	"	20	13
+	^	20	14
+	.	20	13
+	+	20	13
+
+> ~/alx-low_level_programming/0x1C-makefiles/school.c
+	*	1690376330	0
+	"	35	0
+	^	35	1
+	.	35	0
+	+	35	0
+
+> ~/alx-low_level_programming/0x1C-makefiles/main.c
+	*	1690375579	0
+	"	12	0
+	^	12	1
+	.	12	0
+	+	12	0
+
+> ~/alx-low_level_programming/0x1C-makefiles/m.h
+	*	1690375499	0
+	"	9	5
+	^	9	6
+	.	9	5
+	+	9	5
+
+> ~/alx-low_level_programming/0x1C-makefiles/5-island_perimeter.py
+	*	1690375396	0
+	"	28	30
+	^	28	31
+	.	28	30
+	+	28	30
+
+> ~/alx-low_level_programming/0x1C-makefiles/4-Makefile
+	*	1690375329	0
+	"	19	13
+	^	19	14
+	.	19	13
+	+	19	13
+
+> ~/alx-low_level_programming/0x1C-makefiles/3-Makefile
+	*	1690375241	0
+	"	18	13
+	^	18	14
+	.	18	13
+	+	18	13
+
+> ~/alx-low_level_programming/0x1C-makefiles/2-Makefile
+	*	1690375062	0
+	"	7	23
+	^	7	24
+	.	7	23
+	+	7	23
+
+> ~/alx-low_level_programming/0x1C-makefiles/1-Makefile
+	*	1690372800	0
+	"	4	22
+	^	4	23
+	.	4	22
+	+	4	22
+
+> ~/alx-low_level_programming/0x1C-makefiles/0-Makefile
+	*	1690372543	0
+	"	2	29
+	^	2	30
+	.	2	29
+	+	2	29
+
+> ~/AirBnB_clone/web_static/images/icon.png
+	*	1690227841	0
+	"	1	0
+	^	1	0
+
+> ~/AirBnB_clone/web_static/styles/8-places.css
+	*	1690222548	0
+	"	139	0
+	^	139	1
+	.	139	0
+	+	139	0
+
+> ~/AirBnB_clone/web_static/styles/7-places.css
+	*	1690222476	0
+	"	32	0
+	^	32	1
+	.	32	0
+	+	32	0
+
+> ~/AirBnB_clone/web_static/styles/6-filters.css
+	*	1690222395	0
+	"	91	0
+	^	91	1
+	.	91	0
+	+	91	0
+
+> ~/AirBnB_clone/web_static/styles/5-filters.css
+	*	1690222300	0
+	"	51	0
+	^	51	1
+	.	51	0
+	+	51	0
+
+> ~/AirBnB_clone/web_static/styles/4-filters.css
+	*	1690222201	0
+	"	26	0
+	^	26	1
+	.	26	0
+	+	26	0
+
+> ~/AirBnB_clone/web_static/styles/4-common.css
+	*	1690222094	0
+	"	14	0
+	^	14	1
+	.	14	0
+	+	14	0
+
+> ~/AirBnB_clone/web_static/styles/3-footer.css
+	*	1690221985	0
+	"	11	0
+	^	11	1
+	.	11	0
+	+	11	0
+
+> ~/AirBnB_clone/web_static/styles/3-header.css
+	*	1690221886	0
+	"	15	0
+	^	15	1
+	.	15	0
+	+	15	0
+
+> ~/AirBnB_clone/web_static/styles/3-common.css
+	*	1690221820	0
+	"	8	0
+	^	8	1
+	.	8	0
+	+	8	0
+
+> ~/AirBnB_clone/web_static/styles/2-header.css
+	*	1690221689	0
+	"	127	0
+	^	127	1
+	.	127	0
+	+	1	145
+	+	1	50
+	+	127	0
+
+> ~/AirBnB_clone/web_static/styles/2-footer.css
+	*	1690221618	0
+	"	9	0
+	^	9	1
+	.	9	0
+	+	9	0
+
+> ~/AirBnB_clone/web_static/styles/2-common.css
+	*	1690221458	0
+	"	4	0
+	^	4	1
+	.	4	0
+	+	4	0
+
+> ~/AirBnB_clone/web_static/8-index.html
+	*	1690221217	0
+	"	203	6
+	^	203	7
+	.	203	6
+	+	203	6
+
+> ~/AirBnB_clone/web_static/7-index.html
+	*	1690221090	0
+	"	72	6
+	^	72	7
+	.	72	6
+	+	72	6
+
+> ~/AirBnB_clone/web_static/6-index.html
+	*	1690220993	0
+	"	54	6
+	^	54	7
+	.	54	6
+	+	54	6
+
+> ~/AirBnB_clone/web_static/5-index.html
+	*	1690220885	0
+	"	32	6
+	^	32	7
+	.	32	6
+	+	32	6
+
+> ~/AirBnB_clone/web_static/4-index.html
+	*	1690220790	0
+	"	24	6
+	^	24	7
+	.	24	6
+	+	24	6
+
+> ~/AirBnB_clone/web_static/2-index.html
+	*	1690220643	0
+	"	16	6
+	^	16	7
+	.	16	6
+	+	16	6
+
+> ~/AirBnB_clone/web_static/1-index.html
+	*	1690220574	0
+	"	29	6
+	^	29	7
+	.	29	6
+	+	29	6
+
+> ~/AirBnB_clone/web_static/0-index.html
+	*	1690220509	0
+	"	13	6
+	^	13	7
+	.	13	6
+	+	13	6
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/16-shows_by_genre.sql
+	*	1689799146	0
+	"	11	29
+	^	11	30
+	.	11	29
+	+	11	29
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/15-comedy_only.sql
+	*	1689799016	0
+	"	11	19
+	^	11	20
+	.	11	19
+	+	11	19
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
+	*	1689798958	0
+	"	11	18
+	^	11	19
+	.	11	18
+	+	11	18
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
+	*	1689798896	0
+	"	11	32
+	^	11	33
+	.	11	32
+	+	11	32
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
+	*	1689798840	0
+	"	8	33
+	^	8	34
+	.	8	33
+	+	8	33
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
+	*	1689798774	0
+	"	8	33
+	^	8	34
+	.	8	33
+	+	8	33
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/10-genre_id_by_show.sql
+	*	1689798670	0
+	"	7	33
+	^	7	34
+	.	7	33
+	+	7	33
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/9-cities_by_state_join.sql
+	*	1689798578	0
+	"	7	16
+	^	7	17
+	.	7	16
+	+	7	16
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/8-cities_of_california_subquery.sql
+	*	1689798512	0
+	"	9	13
+	^	9	14
+	.	9	13
+	+	9	13
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/7-cities.sql
+	*	1689798417	0
+	"	10	1
+	^	10	2
+	.	10	1
+	+	10	1
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/6-states.sql
+	*	1689798345	0
+	"	7	1
+	^	7	2
+	.	7	1
+	+	7	1
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/5-unique_id.sql
+	*	1689797609	0
+	"	5	1
+	^	5	2
+	.	5	1
+	+	5	1
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/4-never_empty.sql
+	*	1689797502	0
+	"	5	1
+	^	5	2
+	.	5	1
+	+	5	1
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/3-force_name.sql
+	*	1689797433	0
+	"	5	1
+	^	5	2
+	.	5	1
+	+	5	1
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/2-create_read_user.sql
+	*	1689797344	0
+	"	10	29
+	^	10	30
+	.	10	29
+	+	10	29
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/1-create_user.sql
+	*	1689797256	0
+	"	10	29
+	^	10	30
+	.	10	29
+	+	10	29
+
+> ~/alx-higher_level_programming/0x0E-SQL_more_queries/0-privileges.sql
+	*	1689797185	0
+	"	3	39
+	^	3	40
+	.	3	39
+	+	3	39
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/103-max_state.sql
+	*	1689711850	0
+	"	5	16
+	^	5	17
+	.	5	16
+	+	5	16
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/102-top_city.sql
+	*	1689711798	0
+	"	8	7
+	^	8	8
+	.	8	7
+	+	8	7
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/101-avg_temperatures.sql
+	*	1689711675	0
+	"	6	24
+	^	6	25
+	.	6	24
+	+	6	24
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/100-move_to_utf8.sql
+	*	1689711580	0
+	"	4	59
+	^	4	60
+	.	4	59
+	+	4	59
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/16-no_link.sql
+	*	1689710949	0
+	"	6	20
+	^	6	21
+	.	6	20
+	+	6	20
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/15-groups.sql
+	*	1689710884	0
+	"	6	22
+	^	6	23
+	.	6	22
+	+	6	22
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/14-average.sql
+	*	1689710811	0
+	"	3	19
+	^	3	20
+	.	3	19
+	+	3	19
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/13-change_class.sql
+	*	1689710740	0
+	"	3	18
+	^	3	19
+	.	3	18
+	+	3	18
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/12-no_cheating.sql
+	*	1689710638	0
+	"	4	20
+	^	4	21
+	.	4	20
+	+	4	20
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/11-best_score.sql
+	*	1689710578	0
+	"	6	21
+	^	6	22
+	.	6	21
+	+	6	21
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/10-top_score.sql
+	*	1689710480	0
+	"	5	21
+	^	5	22
+	.	5	21
+	+	5	21
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/9-full_creation.sql
+	*	1689710326	0
+	"	6	74
+	^	6	75
+	.	6	74
+	+	6	74
+
+> ~/alx-higher_level_programming/.git/MERGE_MSG
+	*	1689709235	0
+	"	7	5
+	^	7	6
+	.	7	5
+	+	7	5
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/8-count_89.sql
+	*	1689708694	0
+	"	4	15
+	^	4	16
+	.	4	15
+	+	4	15
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/7-insert_value.sql
+	*	1689708621	0
+	"	2	67
+	^	2	68
+	.	2	67
+	+	2	67
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/6-list_values.sql
+	*	1689708538	0
+	"	2	27
+	^	2	28
+	.	2	27
+	+	2	27
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/5-full_table.sql
+	*	1689708477	0
+	"	2	31
+	^	2	32
+	.	2	31
+	+	2	31
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/4-first_table.sql
+	*	1689708410	0
+	"	2	72
+	^	2	73
+	.	2	72
+	+	2	72
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/3-list_tables.sql
+	*	1689708284	0
+	"	2	11
+	^	2	12
+	.	2	11
+	+	2	11
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/2-remove_database.sql
+	*	1689708182	0
+	"	2	35
+	^	2	36
+	.	2	35
+	+	2	35
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/1-create_database_if_missing.sql
+	*	1689708036	0
+	"	2	41
+	^	2	42
+	.	2	41
+	+	2	41
+
+> ~/alx-higher_level_programming/0x0D-SQL_introduction/0-list_databases.sql
+	*	1689707776	0
+	"	2	14
+	^	2	15
+	.	2	14
+	+	2	14
+
+> ~/AirBnB_clone/console.py
+	*	1689586834	0
+	"	210	26
+	^	210	27
+	.	210	26
+	+	1	3963
+	+	1	7107
+	+	1	3983
+	+	1	4009
+	+	1	6371
+	+	210	26
+
+> ~/AirBnB_clone/models/engine/__pycache__/file_storage.cpython-310.pyc
+	*	1689586071	0
+	"	3	0
+	^	3	0
 	.	2	0
 	+	2	0
 
-> ~/alx-system_engineering-devops/0x00-shell_basics/3-listfiles
-	*	1675893518	0
-	"	2	4
-	^	2	5
-	.	3	0
-	+	2	5
-	+	3	0
-
-> ~/alx-system_engineering-devops/0x00-shell_basics/2-bring_me_home
-	*	1675892303	0
-	"	2	2
-	^	2	3
-	.	3	0
-	+	2	4
-	+	3	0
-
-> ~/alx-system_engineering-devops/.git/COMMIT_EDITMSG
-	*	1675891931	0
-	"	2	0
-	^	2	0
-	.	1	5
-	+	1	7
-	+	1	0
-	+	3	0
-	+	1	5
-
-> ~/alx-system_engineering-devops/0x00-shell_basics/1-listit
-	*	1675890045	0
-	"	2	1
-	^	2	2
-	.	2	1
-	+	2	1
-
-> ~/alx-system_engineering-devops/0x00-shell_basics/l-listit
-	*	1675888216	0
-	"	2	1
-	^	2	2
-	.	2	1
-	+	3	0
-	+	2	1
-
-> ~/alx-system_engineering-devops/0x00-shell_basics/0-current_working_directory
-	*	1675880889	0
-	"	2	2
-	^	2	3
-	.	2	2
-	+	2	2
-
-> ~/alx-system_engineering-devops/0x00-shell_basics/README.md
-	*	1675880490	0
-	"	2	0
-	^	2	0
-	.	1	12
-	+	1	12
-
-> ~/alx-zero_day/0x03-git/up_to_date
-	*	1675814433	0
-	"	1	14
-	^	1	15
-	.	1	14
+> ~/AirBnB_clone/models/engine/__pycache__/__init__.cpython-310.pyc
+	*	1689586013	0
+	"	3	0
+	^	3	0
+	.	2	0
 	+	2	0
-	+	1	14
 
-> ~/alx-zero_day/up_to_date
-	*	1675813784	0
-	"	2	0
-	^	2	0
-	.	1	15
-	+	1	0
-	+	2	0
-	+	1	15
+> ~/AirBnB_clone/models/engine/file_storage.py
+	*	1689585780	0
+	"	49	17
+	^	49	18
+	.	49	17
+	+	49	17
 
-> ~/alx-zero_day/.git/MERGE_MSG
-	*	1675810429	0
-	"	7	0
-	^	7	0
-	.	6	16
-	+	1	0
-	+	6	16
-
-> ~/alx-zero_day/0x03-git/bash/alx
-	*	1675807349	0
-	"	2	27
-	^	2	27
-	.	2	27
-	+	1	10
-	+	2	0
-	+	2	27
-
-> ~/alx-zero_day/0x03-git/bash/school
-	*	1675805939	0
-	"	2	24
-	^	2	25
-	.	2	24
-	+	2	24
-
-> ~/alx-zero_day/0x03-git/bash/98
-	*	1675804892	0
+> ~/AirBnB_clone/models/engine/__init__.py
+	*	1689585714	0
 	"	1	0
 
-> ~/alx-zero_day/.git/COMMIT_EDITMSG
-	*	1675791064	0
-	"	1	0
-
-> ~/alx-pre_course/up_to_date
-	*	1675444118	0
-	"	1	14
-	^	1	15
-	.	1	14
-	+	1	14
-
-> ~/alx-pre_course/0x01-git/bash/alx
-	*	1675442216	0
-	"	2	29
-	^	2	30
-	.	3	0
-	+	2	30
-	+	3	0
-
-> ~/alx-pre_course/0x01-git/bash/school
-	*	1675440767	0
-	"	2	25
-	^	2	26
-	.	3	0
-	+	2	12
-	+	3	0
-	+	2	26
-	+	3	0
-
-> ~/.gitconfig
-	*	1675343953	0
-	"	1	0
-
-> ~/0x03_vi/0x03_vi
-	*	1675187148	0
-	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
+> ~/AirBnB_clone/models/user.py
+	*	1689585552	0
+	"	19	17
+	^	19	18
+	.	19	17
+	+	19	17
